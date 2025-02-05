@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashed Password Cracker</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Hashed Password Cracker</h2>
+        <input type="text" id="hash_value" placeholder="Enter hashed password">
+        <select id="hash_type">
+            <option value="md5">MD5</option>
+            <option value="sha1">SHA-1</option>
+            <option value="sha256">SHA-256</option>
+        </select>
+        <button onclick="crackPassword()">Crack Password</button>
+        <p id="result"></p>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
